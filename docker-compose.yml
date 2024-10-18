@@ -1,0 +1,6 @@
+﻿services:
+  carmanager.api:
+    image: carmanager.api
+    build:
+      context: .
+      dockerfile: CarManager.API/Dockerfile
