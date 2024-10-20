@@ -10,8 +10,8 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options)  : DbCon
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.HasDefaultSchema("learn-postgres");
+        modelBuilder.HasDefaultSchema("app");
         
-        modelBuilder.Entity<Car>().ToTable("CarcycleModel");
+        modelBuilder.Entity<Car>().ToTable("Car");
     }
 }
